@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "eb1ad636-5222-4fcb-9395-b45b23ac7c91",
+		"name": "API / AÇAÍ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FLAVOR",
+			"item": [
+				{
+					"name": "/v1/flavors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/flavors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"flavors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/flavors/id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/flavors/{{id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"flavors",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/flavors",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"string\",\n  \"preparationTime\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/v1/flavors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"flavors"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e74863fc-a6bd-45e0-babc-611be8540e33",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b4a4bf7-978b-428b-9321-67584146531e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SIZE",
+			"item": [
+				{
+					"name": "/v1/sizes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/sizes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"sizes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/sizes/id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/sizes/{{id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"sizes",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/sizes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"string\",\n  \"preparationTime\": 0,\n  \"price\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/v1/sizes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"sizes"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e74863fc-a6bd-45e0-babc-611be8540e33",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b4a4bf7-978b-428b-9321-67584146531e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PERSONALIZE",
+			"item": [
+				{
+					"name": "/v1/personalizes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/personalizes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"personalizes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/personalizes/id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/personalizes/{{id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"personalizes",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/personalizes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"string\",\n  \"preparationTime\": 0,\n  \"price\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/v1/personalizes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"personalizes"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e74863fc-a6bd-45e0-babc-611be8540e33",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b4a4bf7-978b-428b-9321-67584146531e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SOLICITATIONS",
+			"item": [
+				{
+					"name": "/v1/solicitations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/solicitations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"solicitations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/solicitations/id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/v1/solicitations/{{id}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"solicitations",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/solicitations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"flavor\": {\n    \"id\": 0\n  },\n  \"personalization\": [\n    {\n      \"id\": 0\n    }\n  ],\n  \"size\": {\n    \"id\": 0\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/v1/solicitations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"solicitations"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e74863fc-a6bd-45e0-babc-611be8540e33",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b4a4bf7-978b-428b-9321-67584146531e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ad728587-f777-4c87-8f8e-db287e6abf5f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2b5bfc93-6779-4a5a-a6d2-5a00236f8cdd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "23425dfa-a439-4ace-a365-7fd897f453a6",
+			"key": "host",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"id": "d60cf253-e6bb-4d15-916a-a7a78ff6d92f",
+			"key": "token",
+			"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik56RXpOVVkwTVVJeE5VRXdSakJHTUVKRFFqRTFORFUzT0RWRVF6WTJNRVJFUVVZeE1EWTVOZyJ9.eyJpc3MiOiJodHRwczovL2Rldi11Z2ZuNDN5ei5hdXRoMC5jb20vIiwic3ViIjoiYWR8bGRhcC1kZXZ8MDY4NTk4NTA2NzEiLCJhdWQiOlsiaHR0cHM6Ly9saXZlbG8uY29tLmJyL2luY2VudGl2byIsImh0dHBzOi8vZGV2LXVnZm40M3l6LmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE1ODA0MDY3MzQsImV4cCI6MTU4MDQ5MzEzNCwiYXpwIjoiNkFkbEJkQWFJV0owdlRnV0VnTVF1YldJaDNxMTJlb1MiLCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwiZ3R5IjoicGFzc3dvcmQifQ.gDCCXW4pOdURX28dy_Y81Wqm9xYrfszHzSUTuPjrxwLrufEyNYfFSuqps4GefO6xV5Y6CY7Hf0x9_WMyvcd00OkTCKVksU8ARDEiu2PKT0ZPDepmuONXFhQvg8NovDZ3blarv8ygWxlZOBdkN_xGq2kJ-uAPdkat26A5QHGpgIVNxyKJR9JKJFPCTwKktEVwffx7oEATwMrANQSS7AjfjFiCDHqiChJ-F7j_DDtXEXAaX0_XtK8IqhT1GACrzxO-JogW0g7kU0J9fCwoZQI-PwEI1qjmqSMuiB99AUn4nYal5SJKqP4LwGQ1utuhPhCQD9IhcKhnE0qVOXLZJ2d0pA",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
